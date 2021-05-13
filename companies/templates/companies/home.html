@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+     <h1>Find the stocks below</h1>
+     {% for stock in stocks %}
+        {{stock.ticker}}
+     {{stock.open}}
+     {{stock.close}}
+     {{stock.volume}}
+     <br>
+     {% endfor %}
+     <h1>-------------------------</h1>
+</body>
+</html>
